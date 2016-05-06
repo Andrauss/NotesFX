@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cache="true" minHeight="200.0" minWidth="250.0" prefHeight="247.0" prefWidth="299.0" style="-fx-background-color: transparent; -fx-base: linear-gradient(#fdfdca, #fcf9a2);" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fandrauss.notesfx.controller.NoteController">
+   <children>
+      <AnchorPane id="root" fx:id="contentPane" layoutX="9.0" layoutY="8.0" minHeight="200.0" minWidth="200.0" prefHeight="224.0" prefWidth="289.0" style="-fx-background-color: linear-gradient(#fdfdca, #fcf9a2);" styleClass="mainFxmlClass" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+          <stylesheets>
+              <URL value="@styles.css" />
+          </stylesheets>
+         <children>
+            <AnchorPane fx:id="headerPane" minWidth="200.0" prefHeight="28.0" prefWidth="289.0" style="-fx-background-color: #f8f7b6;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="btnAddNota" minHeight="19.0" minWidth="19.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="19.0" style="-fx-base: #f8f7b6;" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="4.0">
+                     <graphic>
+                        <ImageView fitHeight="12.0" fitWidth="12.0">
+                           <image>
+                              <Image url="@img/ic_plus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnDeleteNota" layoutX="254.0" minHeight="19.0" minWidth="19.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="19.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="4.0">
+                     <graphic>
+                        <ImageView fitHeight="10.0" fitWidth="10.0">
+                           <image>
+                              <Image url="@img/ic_delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <TextArea fx:id="txtTexto" layoutY="26.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="289.0" promptText="Faça suas anotações aqui." styleClass="text-area" wrapText="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+               <font>
+                  <Font name="Segoe Print" size="16.0" />
+               </font>
+            </TextArea>
+            <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="265.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="2.0">
+               <image>
+                  <Image url="@img/resizeSE.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" color="#616161c3" height="21.66" offsetY="2.5" radius="8.19" spread="0.39" width="13.1" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
