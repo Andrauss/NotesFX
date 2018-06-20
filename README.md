@@ -1,5 +1,5 @@
 # NotesFX
-Projeto de estudo do JavaFX, similar ao Stick Notes (Notas Autoadesivas) do Windows. Contribuições são bem vindas.
+JavaFX study project. JavaFX implementation of Windows Sticky Notes. Feel free to contribute.
 # Imagens
-![alt text](art/fx_notes_2.jpg "Imagem do Projeto")
-![alt text](art/fx_notes_3.jpg "Imagem do Projeto")
+![alt text](art/fx_notes_2.jpg "Notes colors")
+![alt text](art/fx_notes_3.jpg "Notes options")
